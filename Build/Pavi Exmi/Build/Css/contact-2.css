@@ -1,0 +1,187 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* ============================= NAV-BAR ================================= */
+
+.nav-bar {
+    padding: 10px 0;
+    background: #303030;
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.logo img {
+    height: 54px;
+    width: 224px;
+}
+
+.nav-menu {
+    text-align: right;
+}
+
+.nav-menu-ul {
+    display: inline-flex;
+    margin-bottom: 0;
+}
+
+.nav-items {
+    list-style: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.nav-items i {
+    padding-right: 5px;
+}
+
+.nav-items:first-child {
+    padding: 0 0;
+}
+
+#Services-li a {
+    color: #008000;
+    border-bottom: 1px solid #008000;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: white;
+    margin: 0 20px;
+    line-height: 57px;
+    padding: 12px 0;
+    transition: all .3s;
+}
+
+.nav-items a:hover {
+    color: #0b6943;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+
+/* ===================== Nav Mobile ============================ */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.nav-mobile span {
+    float: right;
+    color: white;
+}
+
+.nav-mobile span:hover {
+    color: white;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
+/* =================== Banner =========================== */
+
+.section-banner {
+    background-image: url(../Images/banner-1.jpg);
+    background-repeat: no-repeat;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    background-attachment: fixed;
+}
+
+.banner-box {
+    text-align: center;
+}
+
+.banner-box h2 {
+    color: #fff;
+    font-size: 32px;
+    position: relative;
+    text-transform: uppercase;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.banner-box h2::before {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background: #6cbe03;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 30px);
+}
+
+.banner-ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+.banner-ul li {
+    color: #fff;
+    margin-right: 10px;
+    transition: all .2s;
+}
+
+.banner-ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.banner-ul li a:hover {
+    color: #caffc3;
+}
+
+.banner-ul li:last-child::before {
+    padding: 0 5px;
+    color: #ccc;
+    content: "/";
+}
